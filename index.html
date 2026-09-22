@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    </head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span>&lt;/&gt;</span> MiPortafolio
+            </a>
+
+            <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <button class="theme-btn" id="theme-btn" aria-label="Cambiar tema">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="inicio" class="hero">
+            <div class="greeting-badge">
+                👋 ¡Hola, bienvenido a mi espacio!
+            </div>
+            <h1>Desarrollo experiencias web sencillas, funcionales y bonitas.</h1>
+            <p>
+                Me apasiona transformar ideas en páginas web accesibles y fáciles de usar. Disfruto aprender cada día y crear código limpio con un toque personal.
+            </p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">
+                    Ver proyectos <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contacto" class="btn btn-secondary">
+                    Hablar un poco <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="sobre-mi">
+            <h2 class="section-title">Sobre mí</h2>
+            <p class="section-subtitle">Un poco de mi historia y las herramientas con las que trabajo.</p>
+
+            <div class="about-card">
+                <p>
+                    ¡Hola! Soy un entusiasta de la tecnología al que le gusta crear cosas para la web. Empecé en este mundo por curiosidad de entender cómo funcionaban las páginas que visitaba a diario, y desde entonces no he parado de escribir código.
+                </p>
+                <p>
+                    Me enfoco en mantener las cosas simples y humanas. Fuera de la pantalla, me gusta tomar café, leer y disfrutar de pequeñas caminatas al aire libre.
+                </p>
+                <div>
+                    <h4 style="margin-bottom: 0.5rem; font-weight: 600;">Tecnologías que uso:</h4>
+                    <div class="skills-wrapper">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Diseño Responsivo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <p class="section-subtitle">Algunas cosas en las que he estado trabajando últimamente.</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div>
+                        <h3>Blog de Notas Personal</h3>
+                        <p>Una aplicación sencilla para organizar notas diarias, guardar pendientes y mantener ideas en orden.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h3>Lista de Tareas Simple</h3>
+                        <p>Una herramienta intuitiva con persistencia de datos para no olvidar los pendientes de la semana.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h3>Página Web para Cafetería</h3>
+                        <p>Diseño web limpio y cálido para un negocio local con menú digital y horario de atención.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                        <a href="#"><i class="fab fa-github"></i> Código</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">¿Tienes alguna pregunta o simplemente quieres saludar? Escríbeme.</p>
+
+            <div class="contact-box">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Enviar mensaje <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 - Creado con dedicación y simplicidad.</p>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle" style="color: #22c55e;"></i>
+        <span>¡Gracias por escribir! Te responderé muy pronto.</span>
+    </div>
+
+    <script src="static/js/script.js"></script>
+    </body>
+</html>
